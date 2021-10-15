@@ -1,0 +1,10 @@
+-- LoadString
+local Library loadstring(game:HttpGet("https://raw.githubusercontent.com/V-0ID/V3/main/Other/Basic%20UI%20Lib/Init"))();
+
+--CreateWindow
+local Window = Library:CreateWindow(Title)
+
+--CreateButton
+Window:CreateButton("ButtonName", "ButtonText", function()
+    --Code/Function
+end)
