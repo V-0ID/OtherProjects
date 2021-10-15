@@ -1,0 +1,33 @@
+--[[
+All code was made by V_oid#7953, [Kinda Shit Code ngl it could be better but it is what it is].
+]]
+
+-- you can start by using the function [ CreateNotif() ].
+CreateNotif()
+
+-- Next you can use True/False this is if you want to have coloured logos (Info - Blue | Warning - Yellow | Error - Red).
+CreateNotif(True/False, )
+
+-- After that the next parameter will be the duration of the notif (How longit will stay on screen | Defualt is 7).
+CreateNotif(True/False, 7)
+
+-- Now for the heading/title. [Make sure to make it a string using " "]
+CreateNotif(True/False, 7, "Title")
+
+-- Next is the description of the notif.
+CreateNotif(True/False, 7, "Title", "Desctription [Text Added here for scale/showcasing of the size of the text.]")
+
+--CREDIT
+if you do use this you can also use the commad [ OwnerCredits() ] to give credit to me for making the script! (Ofcourse you don't have to but it would be nice if you did)
+--------------------
+
+CreateNotif()
+--[[
+ColouredLogo = [True/False]
+NotifType = "Info" | "Warning" | "Error"
+NotifDuration = Duration
+NotifHeader = Header[Topic of notif]
+NotifDescription = Description
+
+[Error code 268 means that the text is an invalid string (Make Sure To Turn Your Text Into A String)]
+]]
