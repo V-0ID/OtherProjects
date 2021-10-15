@@ -1,6 +1,8 @@
 --[[
 All code was made by V_oid#7953, [Kinda Shit Code ngl it could be better but it is what it is].
 ]]
+-- First Load The Script Using 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/V-0ID/OtherProjects/main/Custom%20Notifs/Init.lua"))();
 
 -- you can start by using the function [ CreateNotif() ].
 CreateNotif()
@@ -21,6 +23,8 @@ CreateNotif(True/False, 7, "Title", "Desctription [Text Added here for scale/sho
 if you do use this you can also use the commad [ OwnerCredits() ] to give credit to me for making the script! (Ofcourse you don't have to but it would be nice if you did)
 --------------------
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/V-0ID/OtherProjects/main/Custom%20Notifs/Init.lua"))();
+
 CreateNotif()
 --[[
 ColouredLogo = [True/False]
@@ -31,3 +35,20 @@ NotifDescription = Description
 
 [Error code 268 means that the text is an invalid string (Make Sure To Turn Your Text Into A String)]
 ]]
+
+
+--------------------
+Example
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/V-0ID/OtherProjects/main/Custom%20Notifs/Init.lua"))();
+--Main Things
+CreateNotif(true, "Info", 3, "Title", "Description")
+CreateNotif(true, "Warning", 3, "Title", "Description")
+CreateNotif(true, "Error", 3, "Title", "Description")
+CreateNotif(false, "Info", 3, "Title", "Description")
+CreateNotif(false, "Warning", 3, "Title", "Description")
+CreateNotif(false, "Error", 3, "Title", "Description")
+--Invalid Strings Error
+CreateNotif()
+--Credits
+OwnerCredits()
