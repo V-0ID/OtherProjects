@@ -2,11 +2,9 @@
 local CurrentRigType = game.Players.localPlayer.Character.Humanoid.RigType.Value
 
 if CurrentRigType == 1 then
-CurrentRigType = "R15"
-_G.R6 = false
+CurrentRigType = true
 elseif CurrentRigType == 0 then
-CurrentRigType = "R6"
- _G.R6 = true
+CurrentRigType = false
 end
 --My code ends here
 
