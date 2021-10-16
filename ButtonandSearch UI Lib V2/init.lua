@@ -157,7 +157,10 @@ function Library:CreateWindow(CurrentlyVisible, Title)
 
 	UIAspectRatioConstraint.Parent = TopBar
 	UIAspectRatioConstraint.AspectRatio = 16.000
-
+	
+	ButtonContainer.CanvasSize = UDim2.new(0,0,0, UIListLayout.AbsoluteContentSize.Y)
+	
+	
 	Name.Name = "Name"
 	Name.Parent = TopBar
 	Name.AnchorPoint = Vector2.new(0.5, 0.5)
