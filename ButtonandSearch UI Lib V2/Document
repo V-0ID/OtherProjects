@@ -1,0 +1,20 @@
+--Load The Library By Using The Loadstring Below
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/V-0ID/OtherProjects/main/ButtonandSearch%20UI%20Lib%20V2/init.lua"))();
+
+-- To Create The Window use This Under The LoadString [First parameter means if the gui should be minimized or not when executed [True/False] and the second being the title]
+local Window = Library:CreateWindow(true, "Title")
+
+
+--The only gui part is the button (Not Including Seach Bar) -- Example Below
+Window:CreateButton("KillPlayer", function()
+    game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end)
+
+-- Now it should lok like this
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/V-0ID/OtherProjects/main/ButtonandSearch%20UI%20Lib%20V2/init.lua"))();
+local Window = Library:CreateWindow(true, "Title")
+
+Window:CreateButton("KillPlayer", function()
+    game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end)
