@@ -1,6 +1,6 @@
 local Library = {}
 
-function Library:CreateWindow(CurrentlyVisible, Title)
+function Library:CreateWindow(CurrentlyVisible, ScrollSize, Title)
 	local ShittyGUImp4 = Instance.new("ScreenGui")
 	local TopBar = Instance.new("Frame")
 	local FakeFrame = Instance.new("Frame")
@@ -19,6 +19,7 @@ function Library:CreateWindow(CurrentlyVisible, Title)
 	local MinDebounce = false
 	CurrentlyVisible = CurrentlyVisible or true
 	Title = Title or "Invalid string entered"
+	ScrollSize = ScrollSize or 0
 	--Properties:
 
 	ShittyGUImp4.Name = Title
@@ -158,7 +159,7 @@ function Library:CreateWindow(CurrentlyVisible, Title)
 	UIAspectRatioConstraint.Parent = TopBar
 	UIAspectRatioConstraint.AspectRatio = 16.000
 	
-	ButtonContainer.CanvasSize = UDim2.new(0,0,0, UIListLayout.AbsoluteContentSize.Y)
+	ButtonContainer.CanvasSize = UDim2.new(0,0,ScrollSize,0)
 	
 	
 	Name.Name = "Name"
