@@ -10,7 +10,7 @@ Window:CreateButton("KillPlayer", function()
     game.Players.LocalPlayer.Character.Humanoid.Health = 0
 end)
 
--- Now it should lok like this
+-- Now it should look like this
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/V-0ID/OtherProjects/main/ButtonandSearch%20UI%20Lib%20V2/init.lua"))();
 local Window = Library:CreateWindow(true, "Title")
