@@ -21,8 +21,9 @@ function Library:CreateWindow(CurrentlyVisible, Title)
 	Title = Title or "Invalid string entered"
 	--Properties:
 
-	ShittyGUImp4.Name = "ShittyGUI.mp4"
-	ShittyGUImp4.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	ShittyGUImp4.Name = Title
+	ShittyGUImp4.Parent = game.CoreGui
+	ShittyGUImp4.ResetOnSpawn = false
 	ShittyGUImp4.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 
